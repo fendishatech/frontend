@@ -46,11 +46,11 @@ const ApplyForm = () => {
             aria-describedby="fileHelpId"
           />
         </div>
-        <div className="">
+        <div className="d-flex gap-2">
           <button type="submit" class="btn btn-primary btn-danger">
             Submit
           </button>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-danger">
             Cancel
           </button>
         </div>
