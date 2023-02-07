@@ -4,6 +4,12 @@ import { Pt2 } from "../../../assets/Images";
 const Blogs = () => {
   return (
     <div className="container">
+      <div>
+        <div className="section-title mt-4">
+          <span>Check Out Our Blogs</span>
+          <h2>Check Out Our Blogs</h2>
+        </div>
+      </div>
       <div className="row pt-5">
         <div className="col-md-8">
           <div className="row">
