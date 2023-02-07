@@ -1,3 +1,35 @@
+/* -------------------------------------------------------------------------- 
+# Personal
+-------------------------------------------------------------------------- */
+.job-card-shadow:hover {
+  transition: box-shadow .3s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.bg-brand {
+  background-color: #fae9e9;
+  opacity: 1;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.apply-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.apply-btn {
+  padding: 10px 15px;
+  background-color: #cc1616 ;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.apply-btn:hover {
+  background-color: #5c0c0c ;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
