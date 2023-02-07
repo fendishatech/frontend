@@ -5,8 +5,8 @@ const Experiences = () => {
     <section id="portfolio" className="portfolio">
       <div className="container">
         <div className="section-title">
-          <span>Portfolio</span>
-          <h2>Portfolio</h2>
+          <span>Experiences</span>
+          <h2>Experiences</h2>
           <p>
             Sit sint consectetur velit quisquam cupiditate impedit suscipit
             alias

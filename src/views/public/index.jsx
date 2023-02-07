@@ -16,6 +16,8 @@ import ExperienceDetail from "./experiences/ExperienceDetail";
 import Services from "./services/Services";
 import ServiceDetail from "./services/ServiceDetail";
 
+import ContactUs from "./contact/ContactUs";
+
 export {
   PublicLayout,
   Home,
@@ -28,4 +30,5 @@ export {
   ExperienceDetail,
   Services,
   ServiceDetail,
+  ContactUs,
 };

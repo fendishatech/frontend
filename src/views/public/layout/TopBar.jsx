@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Logo } from "../../../assets/Images";
+import { navigationLinks } from "../../../core/navigationLinks";
 
 const TopBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,45 +22,28 @@ const TopBar = () => {
       }
     >
       <div className="container d-flex align-items-center justify-content-between">
-        {/* <h1 className="logo">
-          <a href="index.html">Day</a>
-        </h1> */}
         <a href="/" className="logo">
           <img src={Logo} alt="" className="img-fluid" />
         </a>
 
         <nav id="navbar" className={`navbar ${toggle ? "navbar-mobile" : ""}`}>
           <ul>
-            <li>
-              <a className="nav-link scrollto active" href="#hero">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="/about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#services">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto " href="#portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#pricing">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#team">
-                Team
-              </a>
-            </li>
+            {navigationLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink
+                  className="nav-link"
+                  style={({ isActive }) => ({
+                    color: isActive ? "active" : "",
+                  })}
+                  to={link.url}
+                >
+                  {link.text}
+                </NavLink>
+              </li>
+            ))}
+
+            {/* 
+            DROP DOWN ELEMENT IF NEEDED
             <li className="dropdown">
               <a href="#">
                 <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
@@ -100,12 +85,7 @@ const TopBar = () => {
                   <a href="#">Drop Down 4</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#contact">
-                Contact
-              </a>
-            </li>
+            </li> */}
           </ul>
           <i
             className={`bi mobile-nav-toggle ${!toggle ? "bi-list" : "bi-x"}`}

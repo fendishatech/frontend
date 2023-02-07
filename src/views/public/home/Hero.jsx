@@ -8,12 +8,10 @@ const Hero = () => {
         data-aos="fade-up"
         data-aos-delay="500"
       >
-        <h1>Welcome to Day</h1>
-        <h2>
-          We are team of talented designers making websites with Bootstrap
-        </h2>
+        <h1>Welcome to Zerihun Associates</h1>
+        <h2>Advancing evidence-Based policy making in Africa.</h2>
         <a href="#about" className="btn-get-started scrollto">
-          Get Started
+          Learn More About US
         </a>
       </div>
     </section>
