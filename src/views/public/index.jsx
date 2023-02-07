@@ -9,6 +9,7 @@ import BlogDetail from "./blogs/BlogDetail";
 
 import Jobs from "./jobs/Jobs";
 import JobDetail from "./jobs/JobDetail";
+import ApplyForm from "./jobs/ApplyForm";
 
 import Experiences from "./experiences/Experiences";
 import ExperienceDetail from "./experiences/ExperienceDetail";
@@ -26,6 +27,7 @@ export {
   BlogDetail,
   Jobs,
   JobDetail,
+  ApplyForm,
   Experiences,
   ExperienceDetail,
   Services,

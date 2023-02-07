@@ -8,6 +8,7 @@ import {
   BlogDetail,
   Jobs,
   JobDetail,
+  ApplyForm,
   Experiences,
   ExperienceDetail,
   Services,
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/jobs/:id",
         element: <JobDetail />,
+      },
+      {
+        path: "/apply/:id",
+        element: <ApplyForm />,
       },
       {
         path: "/experiences",

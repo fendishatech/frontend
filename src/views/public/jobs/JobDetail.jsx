@@ -1,6 +1,7 @@
 import { GoCalendar } from "react-icons/go";
 import { TfiAlarmClock, TfiMapAlt } from "react-icons/tfi";
 import { SlBriefcase } from "react-icons/sl";
+import { Link } from "react-router-dom";
 const JobDetail = () => {
   return (
     <div className="container mt-5">
@@ -23,6 +24,7 @@ export default JobDetail;
 const JobDescription = () => {
   return (
     <div className="p-2">
+      <h5 className="job-highlight">Job Title</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quos
         sequi voluptate cumque aliquam quam alias odit eaque ducimus dicta
@@ -31,7 +33,7 @@ const JobDescription = () => {
         laboriosam cupiditate non incidunt tempora inventore ducimus quae
         reprehenderit ipsum earum iusto?
       </p>
-
+      <h5 className="job-highlight">Requirement</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quos
         sequi voluptate cumque aliquam quam alias odit eaque ducimus dicta
@@ -40,7 +42,7 @@ const JobDescription = () => {
         laboriosam cupiditate non incidunt tempora inventore ducimus quae
         reprehenderit ipsum earum iusto?
       </p>
-
+      <h5 className="job-highlight">Deadline</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quos
         sequi voluptate cumque aliquam quam alias odit eaque ducimus dicta
@@ -97,7 +99,9 @@ const JobOverview = () => {
         />
         <div className="container">
           <div className="row">
-            <button className="apply-btn">Apply Now</button>
+            <Link to="/apply/2" className="apply-btn text-center">
+              Apply Now
+            </Link>
           </div>
         </div>
       </div>
