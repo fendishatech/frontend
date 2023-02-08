@@ -2,7 +2,7 @@ import { BiUpload } from "react-icons/bi";
 
 const ApplyForm = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 text-dark">
       <h1 className="mb-3">Apply for (Job Position Name)</h1>
       <form action="">
         <div className="row mb-3">

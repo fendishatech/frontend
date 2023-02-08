@@ -35,6 +35,28 @@
   background-color: #5c0c0c ;
   color:white;
 }
+
+.postcard-img {
+  max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+/*--------------------------------------------------------------
+# Services Link button
+--------------------------------------------------------------*/
+
+.services-link {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #cc1616;
+  color: #fff
+}
+
+.services-link:hover {
+  background-color: #e22828;
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/

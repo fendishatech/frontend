@@ -12,4 +12,7 @@ import Team1 from "./images/team/team-1.jpg";
 import Team2 from "./images/team/team-2.jpg";
 import Team3 from "./images/team/team-3.jpg";
 
-export { Logo, About, Pt1, Pt2, Pt3, Team1, Team2, Team3 };
+// CLIENTS
+import Client1 from "./images/clients/client-1.png";
+
+export { Logo, About, Pt1, Pt2, Pt3, Team1, Team2, Team3, Client1 };

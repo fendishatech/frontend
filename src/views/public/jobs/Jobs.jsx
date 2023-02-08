@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../../../assets/Images";
+import { Helmet } from "react-helmet";
 
 const Jobs = () => {
   return (
-    <div>
-      <div className="section-title mt-4">
-        <span>We are Hiring!</span>
-        <h2>We are Hiring!</h2>
-        <p>We are looking for qualified talent in the following job posts</p>
+    <>
+      <Helmet>
+        <title>Zerihun Associates | Jobs</title>
+      </Helmet>
+      <div className="my-5 text-dark">
+        <div className="section-title">
+          <span>We are Hiring!</span>
+          <h2>We are Hiring!</h2>
+          <p>We are looking for qualified talent in the following job posts</p>
+        </div>
+        <JobCard />
+        <JobCard />
       </div>
-      <JobCard />
-      <JobCard />
-    </div>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import { SlBriefcase } from "react-icons/sl";
 import { Link } from "react-router-dom";
 const JobDetail = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 text-dark">
       <div className="row">
         <div className="col-md-8">
           <h2>Job Overview</h2>

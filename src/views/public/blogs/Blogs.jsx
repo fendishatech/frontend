@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Pt2 } from "../../../assets/Images";
 
 const Blogs = () => {
   return (
-    <div className="container">
+    <div className="container text-dark">
+      <Helmet>
+        <title>Zerihun Associates | Blogs</title>
+      </Helmet>
       <div>
         <div className="section-title mt-4">
           <span>Check Out Our Blogs</span>

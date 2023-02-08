@@ -3,7 +3,7 @@ import { About } from "../../../assets/Images";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about text-dark">
       <div className="container">
         <div className="section-title">
           <span>About Us</span>

@@ -2,7 +2,7 @@ import { Pt2 } from "../../../assets/Images";
 
 const BlogDetail = () => {
   return (
-    <div className="container">
+    <div className="container text-dark">
       <div className="row  mt-4">
         <div className="col-md-8">
           <img className="img-fluid" src={Pt2} alt="" />

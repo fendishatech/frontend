@@ -23,8 +23,4 @@ export const navigationLinks = [
     text: "Jobs",
     url: "/jobs",
   },
-  {
-    text: "Contact Us",
-    url: "/contact",
-  },
 ];
