@@ -16,6 +16,7 @@
 }
 
 .apply-btn-container {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,6 @@
   padding: 10px 15px;
   background-color: #cc1616 ;
   color: white;
-  border-radius: 5px;
   border: none;
 }
 .job-highlight {
@@ -41,6 +41,10 @@
     width: 100%;
     object-fit: cover;
     position: relative;
+}
+
+.apply-btn {
+
 }
 /*--------------------------------------------------------------
 # Services Link button

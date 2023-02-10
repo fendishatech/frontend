@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../../../assets/Images";
 import { Helmet } from "react-helmet";
+import Breadcrumb from "../../../components/Breadcrumb";
 
 const Jobs = () => {
   return (
-    <>
+    <div className="text-dark">
       <Helmet>
         <title>Zerihun Associates | Jobs</title>
       </Helmet>
+      <Breadcrumb innerPage={"Jobs"} />
       <div className="my-5 text-dark">
         <div className="section-title">
           <span>We are Hiring!</span>
@@ -17,7 +19,7 @@ const Jobs = () => {
         <JobCard />
         <JobCard />
       </div>
-    </>
+    </div>
   );
 };
 

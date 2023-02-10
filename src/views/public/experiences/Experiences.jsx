@@ -1,16 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Breadcrumb from "../../../components/Breadcrumb";
 
 const Experiences = () => {
   return (
-    <div>
+    <div className="text-dark">
       <Helmet>
         <title>Zerihun Associates | Experiences</title>
       </Helmet>
-      <div className="section-title mt-4">
-        <span>Our Previous Projects</span>
-        <h2>Our Previous Projects</h2>
-      </div>
+      <Breadcrumb innerPage={"Experiences"} />
     </div>
   );
 };

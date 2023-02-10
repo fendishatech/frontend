@@ -13,7 +13,6 @@ import {
   ExperienceDetail,
   Services,
   ServiceDetail,
-  ContactUs,
 } from "./views/public";
 
 const router = createBrowserRouter([
@@ -64,10 +63,6 @@ const router = createBrowserRouter([
       {
         path: "/services/:id",
         element: <ServiceDetail />,
-      },
-      {
-        path: "/contact",
-        element: <ContactUs />,
       },
     ],
   },

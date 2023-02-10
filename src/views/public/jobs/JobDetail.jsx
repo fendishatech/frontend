@@ -4,16 +4,16 @@ import { SlBriefcase } from "react-icons/sl";
 import { Link } from "react-router-dom";
 const JobDetail = () => {
   return (
-    <div className="container mt-5 text-dark">
+    <div
+      className="container mt-5 text-dark portfolio-details"
+      id="portfolio-details"
+    >
       <div className="row">
         <div className="col-md-8">
           <h2>Job Overview</h2>
           <JobDescription />
         </div>
-        <div className="col-md-4">
-          <h2>Job Overview</h2>
-          <JobOverview />
-        </div>
+        <JobOverview />
       </div>
     </div>
   );
@@ -75,48 +75,82 @@ const JobDescription = () => {
 
 const JobOverview = () => {
   return (
-    <div className="bg-brand p-2">
-      <div className="d-flex flex-column">
-        <OverView
-          title="Date Posted"
-          text="2 days ago"
-          icon={<GoCalendar size={32} color={"#fff"} />}
-        />
-        <OverView
-          title="Deadline"
-          text="in 4 days"
-          icon={<TfiAlarmClock size={32} color={"#fff"} />}
-        />
-        <OverView
-          title="Location"
-          text="Addis Ababa"
-          icon={<TfiMapAlt size={32} color={"#fff"} />}
-        />
-        <OverView
-          title="Job Title"
-          text="Job title"
-          icon={<SlBriefcase size={32} color={"#fff"} />}
-        />
-        <div className="container">
-          <div className="row">
-            <Link to="/apply/2" className="apply-btn text-center">
+    <div class="col-lg-4">
+      <div class="portfolio-info">
+        <h3>Job Overview</h3>
+        <ul>
+          <li>
+            <GoCalendar size={18} />
+            <strong className="mx-2">Date Posted</strong>: 01 March, 2020
+          </li>
+          <li>
+            <TfiAlarmClock size={18} />
+            <strong className="mx-2">Deadline</strong>: 01 March, 2020
+          </li>
+          <li>
+            <TfiMapAlt size={18} />
+            <strong className="mx-2">Location</strong>: Addis Ababa, Ethiopia
+          </li>
+          <li>
+            <SlBriefcase size={18} />
+            <strong className="mx-2">Job Title</strong>:{" "}
+            <a href="#">Web design</a>
+          </li>
+          <div className="apply-btn-container">
+            <Link to="/apply/2" className="apply-btn">
               Apply Now
             </Link>
           </div>
-        </div>
+        </ul>
       </div>
     </div>
   );
 };
 
-const OverView = ({ title, icon, text }) => {
-  return (
-    <div className="d-flex p-2 gap-2">
-      <div className="bg-danger p-2 d-flex align-items-center">{icon}</div>
-      <div className="p-2">
-        <h6>{title}:</h6>
-        <p className="p-0">{text}</p>
-      </div>
-    </div>
-  );
-};
+// const JobOverview = () => {
+//   return (
+//     <div className="bg-brand p-2">
+//       <div className="d-flex flex-column">
+//         <OverView
+//           title="Date Posted"
+//           text="2 days ago"
+//           icon={<GoCalendar size={32} color={"#fff"} />}
+//         />
+//         <OverView
+//           title="Deadline"
+//           text="in 4 days"
+//           icon={<TfiAlarmClock size={32} color={"#fff"} />}
+//         />
+//         <OverView
+//           title="Location"
+//           text="Addis Ababa"
+//           icon={<TfiMapAlt size={32} color={"#fff"} />}
+//         />
+//         <OverView
+//           title="Job Title"
+//           text="Job title"
+//           icon={<SlBriefcase size={32} color={"#fff"} />}
+//         />
+//         <div className="container">
+//           <div className="row">
+//             <Link to="/apply/2" className="apply-btn text-center">
+//               Apply Now
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// const OverView = ({ title, icon, text }) => {
+//   return (
+//     <div className="d-flex p-2 gap-2">
+//       <div className="bg-danger p-2 d-flex align-items-center">{icon}</div>
+//       <div className="p-2">
+//         <h6>{title}:</h6>
+//         <p className="p-0">{text}</p>
+//       </div>
+//     </div>
+//   );
+// };

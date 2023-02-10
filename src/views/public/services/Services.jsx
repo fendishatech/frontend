@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Breadcrumb from "../../../components/Breadcrumb";
 
 const Services = () => {
   return (
@@ -7,10 +8,7 @@ const Services = () => {
       <Helmet>
         <title>Zerihun Associates | Services</title>
       </Helmet>
-      <div className="section-title mt-4">
-        <span>Services</span>
-        <h2>Services</h2>
-      </div>
+      <Breadcrumb innerPage={"Services"} />
     </div>
   );
 };
